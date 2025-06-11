@@ -1,11 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acessibilidade à Água</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #e0f7fa, #f1fcff);
+    }
+
+    .navbar {
+      background-color: #0077b6;
+      padding: 10px 20px;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: white !important;
+      font-weight: 60;
+    }
+
+    
+    .cabecalho {
+      background-size: cover;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cabecalho h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px #00000080;
+    }
+
+    .frase-destaque {
+      font-size: 1.3rem;
+      font-style: italic;
+      margin: 30px auto;
+      text-align: center;
+      color: #045c69;
+      max-width: 800px;
+    }
+
+    .secao-conteudo {
+      padding: 60px 15px;
+    }
+
+    .imagem-destaque {
+      border-radius: 20px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      height: auto;
+    }
+
+    .cards-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .card-custom {
+      flex: 1 1 280px;
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      border-left: 6px solid #00b4d8;
+    }
+
+    .card-custom:hover {
+      transform: translateY(-6px);
+    }
+
+    .card-custom i {
+      font-size: 2rem;
+      color: #00b4d8;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+      margin-top: 50px;
+    }
+
+    .btn-voltar {
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .cabecalho h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    agua
+  <nav class="navbar navbar-expand-lg fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">Agrinho 2025</a>
+      <a class="btn btn-outline-light btn-sm ms-auto" href="index.html"><i class="bi bi-arrow-left"></i> Voltar</a>
+    </div>
+  </nav>
+
+  <!-- Cabeçalho visual -->
+  <header class="cabecalho mt-5 pt-4" data-aos="fade-in">
+    <h1>A Água na Zona Rural</h1>
+  </header>
+
+  <!-- Frase de destaque -->
+  <section class="frase-destaque" data-aos="fade-up">
+    “Preservar a água no campo é garantir o alimento, a vida e o futuro de todos.”
+  </section>
+
+  <!-- Conteúdo principal -->
+  <main class="container secao-conteudo">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4" data-aos="zoom-in-right">
+        <img src="./assets/image/açude.jpg" alt="água no campo" class="imagem-destaque">
+      </div>
+      <div class="col-md-6" data-aos="zoom-in-left">
+        <h2><i class="bi bi-droplet"></i> Importância da Água</h2>
+        <p>
+          Na zona rural, a água é usada para consumo humano, produção de alimentos, criação de animais e manutenção da higiene. Seu uso sustentável garante qualidade de vida e segurança alimentar.
+        </p>
+        <h2><i class="bi bi-geo-alt"></i> Fontes Rurais</h2>
+        <p>• Nascentes preservadas por vegetação nativa.</p>
+        <p>• Rios e córregos (necessitam cuidado contra poluição).</p>
+        <p>• Poços artesianos profundos.</p>
+        <p>• Armazenamento de água da chuva.</p>
+      </div>
+    </div>
+
+    <div class="cards-info mt-5">
+      <div class="card-custom" data-aos="flip-left">
+        <i class="bi bi-exclamation-triangle"></i>
+        <h5>Desafios</h5>
+        <p>Escassez hídrica, desperdício e poluição por defensivos agrícolas comprometem a sustentabilidade.</p>
+      </div>
+
+      <div class="card-custom" data-aos="flip-up">
+        <i class="bi bi-lightbulb"></i>
+        <h5>Soluções</h5>
+        <p>Sistemas de irrigação eficientes, barraginhas, cisternas e reflorestamento de nascentes.</p>
+      </div>
+
+      <div class="card-custom" data-aos="flip-right">
+        <i class="bi bi-people"></i>
+        <h5>Educação</h5>
+        <p>Iniciativas como o Agrinho promovem conscientização e mudanças positivas no campo e na cidade.</p>
+      </div>
+    </div>
+
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>Todos os direitos reservados - Agrinho 2025 | Conectando o campo à cidade com consciência ambiental</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    });
+  </script>
+
 </body>
+
 </html>
+

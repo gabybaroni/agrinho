@@ -11,7 +11,15 @@
 </head>
 
 <body>
-    <!--Apresentação do tema-->
+    <!-- Música de fundo -->
+   <audio id="musicaFundo" autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+  <div class="text-center bg-light py-2">
+    <button id="botaoMusica" onclick="toggleMusica()" class="btn btn-success">⏸️ Pausar música</button>
+  </div>
+
+  <!--Apresentação do tema-->
     <section class="cabecalho">
         <h1>AGRINHO 2025</h1>
         <h3>Festejando Conexão Campo Cidade</h3>
@@ -33,101 +41,183 @@
                         <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
+                        <a class="nav-link text-white" href="agua.html">Água no campo |</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="producao.html">Produção</a>
+                        <a class="nav-link text-white" href="producao.html">Produção e industrialização</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+
+
     <!-- Primeira seção a ser dividida-->
     <div class="container">
         <div class="row pt-5">
             <div class="col ">
                 <div>
-                    <h2>O que podemos falar sobre a zona rural?</h2>
-                    <p class="alinha">A zona rural é essencial para a produção agrícola e pecuária, sendo responsável pela alimentação e desenvolvimento econômico de muitos países. Ela envolve atividades como cultivo de grãos, criação de gado e preservação ambiental, além de ser um espaço de tradição e conexão com a natureza. Com o avanço da tecnologia, a vida no campo se modernizou, aumentando a produtividade e a sustentabilidade. Valorizar a zona rural é fundamental para garantir um futuro próspero, equilibrado e sustentável para todos. <p>A interação entre a zona rural e a cidade é essencial para o desenvolvimento de ambos. A zona rural abastece as cidades com alimentos e matérias-primas, enquanto a cidade oferece novas tecnologias, mercados e oportunidades de trabalho. A migração de pessoas entre o campo e a cidade também favorece essa troca de conhecimento e recursos. Além disso, há uma troca cultural rica, com as tradições rurais influenciando a vida urbana. A sustentabilidade e a inovação são fortalecidas por essa interação, tornando tanto o campo quanto a cidade mais eficientes e conectados para um futuro equilibrado e próspero.
-
-
-
-
-                    </p>
-                    </p>
+                 <h2>        Agrinho 2025 <p></p> Conectando saberes, Transformando realidades</h2>
+                    <p class="alinha">
+ O Agrinho 2025 celebra a integração entre o campo e a cidade, destacando o papel essencial da educação, da sustentabilidade e da inovação no desenvolvimento rural e urbano.  </p>
+Com o tema "Festejando Conexão Campo-Cidade", o programa valoriza o conhecimento produzido nas escolas, o protagonismo dos estudantes e professores, e o impacto positivo das ações educativas no meio ambiente e na sociedade.
+</p> <p> Mais do que um projeto educacional, o AGRINHO é um movimento que une comunidades em torno de valores como cidadania, respeito, cooperação e cuidado com o planeta.</p>
                 </div>
             </div>
             <div class="col text-center">
                 <div>
-                    <img class="img-agro br-3" src="./assets/image/agro.png" alt="Imagem representativa de plantação.">
-                </div>
-            </div>
-        </div>
-        <div class="row pt-5">
-            <h3 class="text-center pb-3">Saiba um pouco mais sobre cada área.</h3>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/image/energia sus (1).png" class="img-card card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Acessibilidade a água</h5>
-                        <p class="card-text">Acessibilidade à água é essencial para a agricultura e o futuro do campo.
-                        </p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/image/energia sus.png" class="img-card card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Energia rural</h5>
-                        <p class="card-text">A energia rural é vital para o crescimento sustentável e a modernização do campo.
-                        </p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/image/agro.png" class="img-card card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Produção e industrialização</h5>
-                        <p class="card-text">A Produção e industrialização rural são chave para o crescimento sustentável do campo.
-                            </p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <img class="img-agro" src="./assets/image/campo cidade.jpg" style="width: 610px;">
 
-        <div id="carouselExample" class="carousel slide pt-4 pb-3">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/image/Energy (1).gif" class="img-slide d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/image/Energy.gif" class=" img-slide d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
+   <!-- Cards ocupando toda a largura -->
+<div class="container-fluid py-5">
+  <h3 class="text-center pb-4">Aprofunde-se em cada área</h3>
+  <div class="row g-4 px-4">
+    <div class="col-12 col-md-4 d-flex">
+      <div class="card w-100 h-100">
+        <img src="./assets/image/casa com agua.jpg" class="card-img-top" alt="casa com água" style="height: 200px; object-fit: cover;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Água no campo</h5>
+          <a href="agua.html" class="btn btn-primary mt-auto">Saiba mais</a>
+        </div>
+      </div>
     </div>
+
+    <div class="col-12 col-md-4 d-flex">
+      <div class="card w-100 h-100">
+        <img src="./assets/image/sol.jpg" class="card-img-top" alt="sol" style="height: 200px; object-fit: cover;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Energia rural</h5>
+          <a href="energia.html" class="btn btn-primary mt-auto">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 d-flex">
+      <div class="card w-100 h-100">
+        <img src="./assets/image/gaby com porquinho.jpg" class="card-img-top" alt="criação de suínos" style="height: 200px; object-fit: cover;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Produção e industrialização</h5>
+          <a href="producao.html" class="btn btn-primary mt-auto">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- CARROSSEL AGRINHO -->
+<div class="carousel">
+  <div class="slide active" id="slide1">
+    <h2>Linha do Tempo do Agrinho</h2>
+    <div class="timeline">
+      <div class="event">
+        <div class="dot"></div>
+        <p><strong>1995:</strong> Criação do Programa Agrinho</p>
+      </div>
+      <div class="event">
+        <div class="dot"></div>
+        <p><strong>2005:</strong> Expansão para todo o estado do Paraná</p>
+      </div>
+      <div class="event">
+        <div class="dot"></div>
+        <p><strong>2015:</strong> Inclusão de temas de sustentabilidade</p>
+      </div>
+      <div class="event">
+        <div class="dot"></div>
+        <p><strong>2020:</strong> Digitalização dos projetos escolares</p>
+      </div>
+      <div class="event">
+        <div class="dot"></div>
+        <p><strong>2024:</strong> Reconhecimento nacional em inovação educacional</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" id="slide2">
+    <h2>Depoimentos de Alunos</h2>
+    <blockquote>
+      "O Agrinho me incentivou a pesquisar e apresentar meus próprios projetos. Aprendi sobre meio ambiente, cidadania e inovação de um jeito divertido e prático!"
+    </blockquote>
+    <p>— Ana Clara, 8º ano, Escola Municipal de Londrina</p>
+  </div>
+
+  <div class="slide" id="slide3">
+    <h2>Projetos Destaque do Paraná</h2>
+    <ul>
+      <li><strong>"Horta Inteligente"</strong> – Utilização de sensores de umidade em escolas de Campo Mourão</li>
+      <li><strong>"EcoBrinquedos"</strong> – Alunos de Ponta Grossa criam brinquedos com materiais recicláveis</li>
+      <li><strong>"Robôs do Campo"</strong> – Estudantes de Maringá desenvolvem protótipos para automação rural</li>
+    </ul>
+  </div>
+
+  <button class="nav-btn left-btn" onclick="prevSlide()">❮</button>
+  <button class="nav-btn right-btn" onclick="nextSlide()">❯</button>
+
+  <div class="dots">
+    <span class="dot active" onclick="goToSlide(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+  </div>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+      dots[i].classList.toggle('active', i === index);
+    });
+    currentIndex = index;
+  }
+
+  function prevSlide() {
+    let index = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(index);
+  }
+
+  function nextSlide() {
+    let index = (currentIndex + 1) % slides.length;
+    showSlide(index);
+  }
+
+  function goToSlide(index) {
+    showSlide(index);
+  }
+</script>
+
+
+</body>
+</html>
+
     <div class="footer ">
-        <p>Todos os direitos reservados - Agrinho 2025. Fortalecendo a conexão entre o campo e a cidade.
-        </p>
+        <p>Todos os direitos reservados para agrinho 2025 - Festejando a conexão campo cidade.</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+        
+        <!-- Scripts Bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const audio = document.getElementById("musicaFundo");
+    const botao = document.getElementById("botaoMusica");
+    function toggleMusica() {
+      if (audio.paused) {
+        audio.play();
+        botao.innerText = "⏸️ Pausar música";
+      } else {
+        audio.pause();
+        botao.innerText = "▶️ Tocar música";
+      }
+    }
+  </script>
 </body>
+
 
 </html>
